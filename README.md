@@ -6,12 +6,18 @@
 Write a Python program to display the message "Hello World" on the screen.
 
 ## 2. Algorithm
-Start
-Display the message "Hello World"
-Stop
-## 3. Flowchart
+1. Start
+2. Display the message "Hello World"
+3. Stop
 
-Start → Display "Hello World" → Stop
+## 3.Flowchart
+
+```mermaid
+flowchart TD
+    A([Start]) --> B[Display Hello World]
+    B --> C([Stop])
+```
+
 
 ## 4. Python Source Code
 ```python
@@ -34,7 +40,12 @@ Write a Python program to display a student's personal information including nam
 4. Stop
 
 ## 3. Flowchart
-Start → Store Student Details → Display Details → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[Store Name, Roll Number, Branch, College]
+    B --> C[Display Student Details]
+    C --> D([Stop])
+```
 
 ## 4. Python Source Code
 
@@ -74,7 +85,14 @@ Write a Python program to read two numbers and display their sum.
 
 ## 3. Flowchart
 
-Start → Input First Number → Input Second Number → Add Numbers → Display Sum → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input First Number/]
+    B --> C[/Input Second Number/]
+    C --> D[Sum = A + B]
+    D --> E[Display Sum]
+    E --> F([Stop])
+```
 
 ## 4. Python Source Code
 
@@ -104,14 +122,20 @@ Sum = 30.0
  Write a Python program to calculate the area of a circle for a given radius.
 
 ## 2. Algorithm
-Start
-Read the radius of the circle
-Calculate the area using the formula: Area = π × r × r
-Display the area
-Stop
+1. Start
+2. Read the radius of the circle
+3. Calculate the area using the formula: Area = π × r × r
+4. Display the area
+5. Stop
 ## 3. Flowchart
 
-Start → Input Radius → Calculate Area = 3.14 × r × r → Display Area → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input Radius/]
+    B --> C[Area = 3.14 × Radius × Radius]
+    C --> D[Display Area]
+    D --> E([Stop])
+```
 
 ## 4. Python Source Code
 ```python
@@ -136,15 +160,22 @@ Area of Circle = 78.5
 Write a Python program to calculate the area of a rectangle using length and breadth.
 
 ## 2. Algorithm
-Start
-Read the length of the rectangle
-Read the breadth of the rectangle
-Calculate the area using the formula: Area = Length × Breadth
-Display the area
-Stop
+1. Start
+2. Read the length of the rectangle
+3. Read the breadth of the rectangle
+4. Calculate the area using the formula: Area = Length × Breadth
+5. Display the area
+6. Stop
 ## 3. Flowchart
 
-Start → Input Length and Breadth → Calculate Area = Length × Breadth → Display Area → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input Length/]
+    B --> C[/Input Breadth/]
+    C --> D[Area = Length × Breadth]
+    D --> E[Display Area]
+    E --> F([Stop])
+```
 
 ## 4. Python Source Code
 ```python
@@ -171,14 +202,21 @@ Area of Rectangle = 50.0
 Write a Python program to convert temperature from Celsius to Fahrenheit.
 
 ## 2. Algorithm
-Start
-Read the temperature in Celsius
-Convert Celsius to Fahrenheit using the formula: Fahrenheit = (Celsius × 9/5) + 32
-Display the Fahrenheit temperature
-Stop
+1. Start
+2. Read the temperature in Celsius
+3. Convert Celsius to Fahrenheit using the formula: Fahrenheit = (Celsius × 9/5) + 32
+4. Display the Fahrenheit temperature
+5. Stop
 ## 3. Flowchart
 
-Start → Input Celsius Temperature → Calculate Fahrenheit = (C × 9/5) + 32 → Display Fahrenheit → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[Input Celsius Temperature]
+    B --> C[Calculate Fahrenheit]
+    C --> D[Display Fahrenheit]
+    D --> E([Stop])
+```
+
 
 ## 4. Python Source Code
 ```python
@@ -202,17 +240,26 @@ Temperature in Fahrenheit = 77.0
 Write a Python program to convert kilometers to meters, meters to centimeters, and kilograms to grams.
 
 ## 2. Algorithm
-Start
-Read distance in kilometers
-Convert kilometers to meters
-Convert meters to centimeters
-Read weight in kilograms
-Convert kilograms to grams
-Display all converted values
-Stop
+1. Start
+2. Read distance in kilometers
+3. Convert kilometers to meters
+4. Convert meters to centimeters
+5. Read weight in kilograms
+6. Convert kilograms to grams
+7. Display all converted values
+8. Stop
 ## 3. Flowchart
 
-Start → Input Kilometers → Convert to Meters → Convert to Centimeters → Input Kilograms → Convert to Grams → Display Results → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input Kilometers/]
+    B --> C[Convert to Meters]
+    C --> D[Convert to Centimeters]
+    D --> E[/Input Kilograms/]
+    E --> F[Convert to Grams]
+    F --> G[Display Results]
+    G --> H([Stop])
+```
 
 ## 4. Python Source Code
 ```python
@@ -243,17 +290,22 @@ Grams = 2000.0
 Write a Python program to interchange the values of two variables and display the result.
 
 ## 2. Algorithm
-Start
-Read two variables
-Store the first variable in a temporary variable
-Assign the second variable to the first variable
-Assign the temporary variable to the second variable
-Display the swapped values
-Stop
+1. Start
+2. Read two variables
+3. Store the first variable in a temporary variable
+4. Assign the second variable to the first variable
+5. Assign the temporary variable to the second variable
+6. Display the swapped values
+7. Stop
 ## 3. Flowchart
 
-Start → Input A, B → Swap Values → Display Swapped Values → Stop
-
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input A and B/]
+    B --> C[Swap Values]
+    C --> D[Display Swapped Values]
+    D --> E([Stop])
+```
 ## 4. Python Source Code
 ```python
 a = int(input("Enter first number: "))
@@ -284,14 +336,20 @@ b = 10
 Write a Python program to calculate the total marks obtained by a student in five subjects.
 
 ## 2. Algorithm
-Start
-Read marks of five subjects
-Calculate the total marks
-Display the total marks
-Stop
+1. Start
+2. Read marks of five subjects
+3. Calculate the total marks
+4. Display the total marks
+5. Stop
 ## 3. Flowchart
 
-Start → Input Marks of 5 Subjects → Calculate Total Marks → Display Total Marks → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input Marks of 5 Subjects/]
+    B --> C[Calculate Total Marks]
+    C --> D[Display Total Marks]
+    D --> E([Stop])
+```
 
 ## 4. Python Source Code
 ```python
@@ -323,16 +381,23 @@ Total Marks = 400.0
 Write a Python program to calculate the percentage of marks obtained in an examination.
 
 ## 2. Algorithm
-Start
-Read marks obtained in five subjects
-Calculate the total marks
-Calculate the percentage using the formula:
-Percentage = (Total Marks / Maximum Marks) × 100
-Display the percentage
-Stop
+1. Start
+2. Read marks obtained in five subjects
+3. Calculate the total marks
+4. Calculate the percentage using the formula:
+5. Percentage = (Total Marks / Maximum Marks) × 100
+6. Display the percentage
+7. Stop
 ## 3. Flowchart
 
-Start → Input Marks of 5 Subjects → Calculate Total Marks → Calculate Percentage → Display Percentage → Stop
+```mermaid
+flowchart TD
+    A([Start]) --> B[/Input Marks of 5 Subjects/]
+    B --> C[Calculate Total Marks]
+    C --> D[Calculate Percentage]
+    D --> E[Display Percentage]
+    E --> F([Stop])
+```
 
 ## 4. Python Source Code
 ```python
